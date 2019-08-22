@@ -1,0 +1,5 @@
+Build/
+Build-obj/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
