@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0BC29E87-F779-E0D4-6081-B9304C587BC5}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Aes128-GUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Build\Debug-windows-x86_64\Aes128-GUI\</OutDir>
+    <IntDir>Build-obj\Debug-windows-x86_64\Aes128-GUI\</IntDir>
+    <TargetName>Aes128-GUI</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Build\Release-windows-x86_64\Aes128-GUI\</OutDir>
+    <IntDir>Build-obj\Release-windows-x86_64\Aes128-GUI\</IntDir>
+    <TargetName>Aes128-GUI</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ANGE_PLATFORM_WINDOWS;ANGE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glad;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\GLFW;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\KHR;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\libjpeg;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\libpng;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\zlib;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Core;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Platform;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Shaders;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Platform\Linux;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Platform\Win32;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\core;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\exception;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\move;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\smart_ptr;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\type_traits;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\abi;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\compiler;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\no_tr1;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\platform;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\stdlib;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\move\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\architecture;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\compiler;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\language;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\library;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\os;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\other;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\platform;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\architecture\x86;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\arm;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\ppc;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\x86;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\x86_amd;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\library\c;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\library\std;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\os\bsd;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\smart_ptr\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\type_traits\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype\config;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype\internal;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype\internal\services;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\ext;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\gtc;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\gtx;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\simd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;Ange.lib;GLFW.lib;libpng.lib;libjpeg.lib;zlib.lib;FreeType.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ANGE_PLATFORM_WINDOWS;ANGE_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glad;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\GLFW;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\KHR;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\libjpeg;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\libpng;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\zlib;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Core;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Platform;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Shaders;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Platform\Linux;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\Ange\Platform\Win32;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\core;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\exception;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\move;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\smart_ptr;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\type_traits;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\abi;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\compiler;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\no_tr1;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\platform;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\config\stdlib;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\move\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\architecture;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\compiler;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\language;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\library;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\os;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\other;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\platform;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\architecture\x86;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\arm;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\ppc;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\x86;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\hardware\simd\x86_amd;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\library\c;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\library\std;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\predef\os\bsd;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\smart_ptr\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\boost\boost\type_traits\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype\config;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype\internal;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\freetype\internal\services;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\detail;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\ext;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\gtc;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\gtx;C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\include\glm\simd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;Ange.lib;GLFW.lib;libpng.lib;libjpeg.lib;zlib.lib;FreeType.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Arkadiusz Jarlaczyk\Desktop\AngeInstall\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Aes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Aes.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
